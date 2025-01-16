@@ -17,8 +17,8 @@
 body {
     height: 100vh;
     width: 100%;
+    max-width: 100%;
     background-color: #fff;
-    overflow-x: hidden;
 }
 
 .home {
@@ -44,7 +44,7 @@ body {
 #title-home::before,
 #title-home::after {
     content: "★    ★    ★";
-    color: gold;
+    color: #fff;
     font-size: 15px;
     text-align: center;
     vertical-align: middle;
@@ -87,23 +87,6 @@ body {
     font-weight: bold;
 }
 
-#img-card2:hover::after {
-    content: "Avenida Sete de Setembro";
-    font-size: 1rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    color: #fff;
-    background-color: #0d1f2280;
-    height: 100%;
-    width: 100%;
-    backdrop-filter: blur(4px);
-    text-align: center;
-    text-transform: uppercase;
-    font-style: italic;
-    font-weight: bold;
-}
 #img-card2:hover::after {
     content: "Avenida Sete de Setembro";
     font-size: 1rem;
@@ -176,7 +159,8 @@ body {
     font-weight: bold;
 }
 
-#title-card {
+#title-card,
+#description-card {
     font-family: "Bebas Neue", serif;
 }
 

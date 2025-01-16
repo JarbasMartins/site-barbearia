@@ -1,13 +1,13 @@
 ScrollReveal().reveal("#home-items", {
-    distance: "2%",
+    distance: "10%",
     duration: 2000,
     opacity: 0,
     easing: "ease",
-    origin: "right",
+    origin: "top",
 });
 
 ScrollReveal().reveal(".main-r", {
-    distance: "50px",
+    distance: "80px",
     duration: 2000,
     delay: 500,
     opacity: 0,

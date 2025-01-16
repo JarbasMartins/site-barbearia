@@ -38,14 +38,22 @@
             id="header"
         >
             <h1 class="text-3xl font-extrabold uppercase">Barber</h1>
+
             <nav class="hidden md:flex bg-gray-800 p-5 rounded-full">
-                <ul class="flex gap-4">
+                <ul class="flex gap-7">
+                    <li class="cursor-pointer hover:text-primary transition">
+                        <i class="fa-brands fa-instagram"></i>
+                    </li>
+                    <li class="cursor-pointer hover:text-primary transition">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </li>
+                    <li class="cursor-pointer hover:text-primary transition">
+                        <i class="fa-solid fa-phone"></i>
+                    </li>
                     <li class="cursor-pointer hover:text-primary transition">
                         Agendar
                     </li>
-                    <li class="cursor-pointer hover:text-primary transition">
-                        Contatos
-                    </li>
+
                     <li class="cursor-pointer hover:text-primary transition">
                         Sobre Nós
                     </li>
@@ -60,7 +68,7 @@
         >
             <div class="space-y-2" id="home-items">
                 <h1
-                    class="text-2xl font-extrabold uppercase md:text-7xl text-primary overflow-y-hidden"
+                    class="text-2xl font-extrabold uppercase md:text-7xl text-gray-200 overflow-y-hidden"
                     id="title-home"
                 >
                     Barber Shop
@@ -84,22 +92,79 @@
         >
             <div>
                 <h1
-                    class="text-4xl text-gray-200 uppercase font-bold md:text-7xl text-center"
+                    class="text-5xl text-gray-200 uppercase font-bold md:text-7xl text-center"
                     id="title-card"
                 >
                     Nossas <br />Unidades
                 </h1>
+                <p
+                    class="text-lg text-gray-300 font-light md:text-3xl text-center"
+                    id="description-card"
+                >
+                    Ipanema | MG
+                </p>
             </div>
             <div class="slider-container">
                 <div class="slider">
                     <div class="slide">
-                        <img src="assets/backgroundbarber.png" alt="Imagem 1" />
+                        <img
+                            src="assets/backgroundbarber.png"
+                            alt="Imagem 1"
+                            class="rounded-xl object-cover"
+                        />
+                        <h1
+                            class="absolute bottom-0 p-3 text-white uppercase italic text-base font-semibold"
+                        >
+                            Dom Pedro 2
+                        </h1>
                     </div>
                     <div class="slide">
-                        <img src="assets/bg-barbearia.jpg" alt="Imagem 2" />
+                        <img
+                            src="https://forbes.com.br/wp-content/uploads/2021/07/ForbesLife_garagem_20072021_Divulgacao-800x533.jpg"
+                            alt="Imagem 2"
+                            class="rounded-xl object-cover"
+                        />
+                        <h1
+                            class="absolute bottom-0 p-3 text-white uppercase italic text-base font-semibold"
+                        >
+                            Av. 7 de Setembro
+                        </h1>
                     </div>
                     <div class="slide">
-                        <img src="assets/backgroundbarber.png" alt="Imagem 3" />
+                        <img
+                            src="https://d2zdpiztbgorvt.cloudfront.net/region1/br/188192/biz_photo/85a94aa5ff7043eabeb99b87b36448-barbearia-hermanos-freguesia-d-biz-photo-79b664adccae4784a7ec0fdf21457e-booksy.jpeg?size=640x427"
+                            alt="Imagem 3"
+                            class="rounded-xl object-cover"
+                        />
+                        <h1
+                            class="absolute bottom-0 p-3 text-white uppercase italic text-base font-semibold"
+                        >
+                            Capelinha
+                        </h1>
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://i.pinimg.com/736x/db/da/61/dbda611adb4cf6d68f82e24e1ce0446c.jpg"
+                            alt="Imagem 3"
+                            class="rounded-xl object-cover"
+                        />
+                        <h1
+                            class="absolute bottom-0 p-3 text-white uppercase italic text-base font-semibold"
+                        >
+                            Bairro das Irmãs
+                        </h1>
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3ef6348gpk4k0.jpg"
+                            alt="Imagem 3"
+                            class="rounded-xl object-cover"
+                        />
+                        <h1
+                            class="absolute bottom-0 p-3 text-white uppercase italic text-base font-semibold"
+                        >
+                            Av. Anchieta
+                        </h1>
                     </div>
                 </div>
                 <button class="prev" onclick="moveSlide(-1)">
@@ -124,6 +189,12 @@
             >
                 Nossas <br />Unidades
             </h1>
+            <p
+                class="text-gray-300 font-light text-2xl text-center"
+                id="description-card"
+            >
+                Ipanema | MG
+            </p>
             <div class="flex flex-row h-full justify-center w-2/3">
                 <div
                     class="flex items-center justify-center img-card"
@@ -170,7 +241,7 @@
                     id="img-card5"
                 >
                     <img
-                        src="assets/bg-barbearia.jpg"
+                        src="https://cdn6.campograndenews.com.br/uploads/noticias/2020/03/10/3ef6348gpk4k0.jpg"
                         alt=""
                         class="h-full w-72 object-cover"
                     />
@@ -181,7 +252,7 @@
         <!-- FIM UNIDADES DESKTOP -->
 
         <div
-            class="main flex flex-col-reverse justify-center items-center md:flex-row-reverse w-full h-[70vh] p-8 mt-56 md:mt-28 gap-5"
+            class="main flex flex-col-reverse justify-center items-center md:flex-row-reverse w-full h-[70vh] p-8 mt-40 md:mt-28 gap-5"
         >
             <div class="main-l flex items-center justify-center">
                 <img
