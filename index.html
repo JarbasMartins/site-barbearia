@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Projeto Barbearia</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+            integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
+
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+            rel="stylesheet"
+        />
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <link rel="stylesheet" href="styles/input.css" />
+        <link rel="stylesheet" href="styles/output.css" />
+    </head>
+    <body>
+        <!-- NAV -->
+        <header
+            class="flex items-center justify-around top-0 right-0 z-10 absolute w-full p-5 text-white"
+            id="header"
+        >
+            <h1 class="text-3xl font-extrabold uppercase">Barber</h1>
+            <nav class="hidden md:flex bg-gray-800 p-5 rounded-full">
+                <ul class="flex gap-4">
+                    <li class="cursor-pointer hover:text-primary transition">
+                        Agendar
+                    </li>
+                    <li class="cursor-pointer hover:text-primary transition">
+                        Contatos
+                    </li>
+                    <li class="cursor-pointer hover:text-primary transition">
+                        Sobre Nós
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- FIM NAVE -->
+        <!-- HOME -->
+        <div
+            class="h-[100vh] w-full items-center flex justify-around flex-col text-center relative gap-y-4 home text-white"
+        >
+            <div class="space-y-2" id="home-items">
+                <h1
+                    class="text-2xl font-extrabold uppercase md:text-7xl text-primary overflow-y-hidden"
+                    id="title-home"
+                >
+                    Barber Shop
+                </h1>
+                <div class="text-2xl md:text-3xl uppercase font-sans font-bold">
+                    Zero na máquina, nota dez no atendimento.
+                </div>
+                <div>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos maxime officiis voluptates quas. Rerum, deleniti earum
+                    ullam minima doloribus.
+                </div>
+            </div>
+        </div>
+        <!-- FIM HOME -->
+        <!-- INFO -->
+
+        <!-- UNIDADES MOB -->
+        <div
+            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-5 bg-main flex md:hidden space-y-5"
+        >
+            <div>
+                <h1
+                    class="text-4xl text-gray-200 uppercase font-bold md:text-7xl text-center"
+                    id="title-card"
+                >
+                    Nossas <br />Unidades
+                </h1>
+            </div>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide">
+                        <img src="assets/backgroundbarber.png" alt="Imagem 1" />
+                    </div>
+                    <div class="slide">
+                        <img src="assets/bg-barbearia.jpg" alt="Imagem 2" />
+                    </div>
+                    <div class="slide">
+                        <img
+                            src="https://www.guiaviagensbrasil.com/imagens/Imagem%20do%20mar%20calma%20e%20belo%20da%20Praia%20da%20Engenhoca-Itacar%C3%A9-Bahia-BA.jpg"
+                            alt="Imagem 3"
+                        />
+                    </div>
+                </div>
+                <button class="prev" onclick="moveSlide(-1)">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <button class="next" onclick="moveSlide(1)">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- FIM UNIDADES MOB    -->
+
+        <!-- UNIDADES DESKTOP -->
+
+        <div
+            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-10 bg-main hidden md:flex space-y-5"
+        >
+            <h1
+                class="text-2xl text-gray-200 uppercase font-bold md:text-7xl text-center"
+                id="title-card"
+            >
+                Nossas <br />Unidades
+            </h1>
+            <div class="flex flex-row h-full justify-center w-2/3">
+                <div
+                    class="flex items-center justify-center img-card"
+                    id="img-card1"
+                >
+                    <img
+                        src="assets/bg-barbearia.jpg"
+                        alt=""
+                        class="h-full w-72 object-cover"
+                    />
+                </div>
+                <div
+                    class="flex items-center justify-center img-card"
+                    id="img-card2"
+                >
+                    <img
+                        src="https://forbes.com.br/wp-content/uploads/2021/07/ForbesLife_garagem_20072021_Divulgacao-800x533.jpg"
+                        alt=""
+                        class="h-full w-72 object-cover"
+                    />
+                </div>
+                <div
+                    class="flex items-center justify-center img-card"
+                    id="img-card3"
+                >
+                    <img
+                        src="https://d2zdpiztbgorvt.cloudfront.net/region1/br/188192/biz_photo/85a94aa5ff7043eabeb99b87b36448-barbearia-hermanos-freguesia-d-biz-photo-79b664adccae4784a7ec0fdf21457e-booksy.jpeg?size=640x427"
+                        alt=""
+                        class="h-full w-72 object-cover"
+                    />
+                </div>
+                <div
+                    class="flex items-center justify-center img-card"
+                    id="img-card4"
+                >
+                    <img
+                        src="https://i.pinimg.com/736x/db/da/61/dbda611adb4cf6d68f82e24e1ce0446c.jpg"
+                        alt=""
+                        class="h-full w-72 object-cover"
+                    />
+                </div>
+                <div
+                    class="flex items-center justify-center img-card"
+                    id="img-card5"
+                >
+                    <img
+                        src="assets/bg-barbearia.jpg"
+                        alt=""
+                        class="h-full w-72 object-cover"
+                    />
+                </div>
+            </div>
+        </div>
+
+        <!-- FIM UNIDADES DESKTOP -->
+
+        <div
+            class="main flex flex-col-reverse justify-center items-center md:flex-row-reverse w-full h-[70vh] p-8 mt-56 md:mt-28 gap-5"
+        >
+            <div class="main-l flex items-center justify-center">
+                <img
+                    src="assets/logobarber.png"
+                    alt=""
+                    class="object-cover h-full w-full md:h-4/5 md:w-4/5"
+                />
+            </div>
+            <div class="main-r space-y-5">
+                <h1 class="font-semibold text-2xl md:text-4xl">Sobre Nós</h1>
+                <p class="md:text-lg text-secundary">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id
+                    doloribus laudantium iure aliquam blanditiis et est in?
+                    Dolorem ex laborum saepe dicta ea ut quae iste repellat?
+                    Laboriosam, molestias ipsa.
+                </p>
+                <p class="md:text-lg">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Quo reiciendis aut quia, aperiam distinctio velit voluptatem
+                    illo enim aliquid unde Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Ipsam dignissimos tenetur, cum
+                    nobis recusandae quaerat libero nemo. Tempora, eveniet
+                    repellat?
+                </p>
+            </div>
+        </div>
+        <!-- FIM INFO -->
+
+        <!-- CARDS -->
+        <!-- FIM CARDS -->
+
+        <footer class="w-[100vw] h-[100px] bg-main mt-72"></footer>
+
+        <script src="script.js"></script>
+        <script src="https://unpkg.com/scrollreveal"></script>
+    </body>
+</html>

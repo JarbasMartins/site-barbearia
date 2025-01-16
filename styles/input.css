@@ -1,0 +1,231 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+.home {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 1),
+            rgba(0, 0, 0, 0)
+        ),
+        url(/assets/backgroundbarber.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#title-home {
+    font-family: "Dela Gothic One", serif;
+}
+
+/* #home-r {
+    background-color: #00320a4b;
+} */
+
+#title-home::before,
+#title-home::after {
+    content: "★    ★    ★";
+    color: gold;
+    font-size: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.main-l {
+    flex: 1;
+}
+.main-r {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+
+.main-r p {
+    max-width: 60ch;
+}
+
+.img-card {
+    position: relative;
+}
+
+#img-card1:hover::after {
+    content: "Dom Pedro 2";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#img-card2:hover::after {
+    content: "Avenida Sete de Setembro";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+#img-card2:hover::after {
+    content: "Avenida Sete de Setembro";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#img-card3:hover::after {
+    content: "Capelinha";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#img-card4:hover::after {
+    content: "Bairro das Irmãs";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#img-card5:hover::after {
+    content: "Avenida Anchieta";
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    color: #fff;
+    background-color: #0d1f2280;
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(4px);
+    text-align: center;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#title-card {
+    font-family: "Bebas Neue", serif;
+}
+
+.slider-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    right: 0;
+    transform: translateX(10%);
+}
+
+.slide img {
+    width: 80%;
+    display: block;
+    height: 300px;
+}
+
+.slider-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    z-index: 100;
+    padding: 5px;
+    border-radius: 100%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@media (max-width: 600px) {
+    .slider-container {
+        width: 100%;
+    }
+}
