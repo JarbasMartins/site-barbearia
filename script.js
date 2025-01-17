@@ -38,3 +38,15 @@ function updateSliderPosition() {
     const slider = document.querySelector(".slider");
     slider.style.transform = `translateX(-${currentSlide * 100}%)`;
 }
+
+function menuMobShow() {
+    const menuMobile = document.getElementById("menu-mobile");
+
+    menuMobile.style.display = "block";
+}
+
+function menuMobClose(event) {
+    const menuMobile = document.getElementById("menu-mobile");
+
+    menuMobile.style.display = "none";
+}

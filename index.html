@@ -59,7 +59,70 @@
                     </li>
                 </ul>
             </nav>
+
+            <div class="text-slate-50 mobile-menu-icon flex md:hidden">
+                <button onclick="menuMobShow()">
+                    <i id="icon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
         </header>
+
+        <!-- MENU MOB -->
+
+        <div
+            id="menu-mobile"
+            class="fixed right-0 top-0 bg-slate-100 z-40 h-[30vh] hidden md:hidden text-black"
+        >
+            <ul
+                class="flex gap-3 flex-col p-4 items-end justify-start md:hidden"
+            >
+                <li
+                    class="font-medium font-sans hover:text-primary transition nav-item cursor-pointer"
+                >
+                    Sobre Nós
+                </li>
+                <div class="line"></div>
+
+                <li
+                    class="font-medium font-sans hover:text-primary transition nav-item cursor-pointer"
+                >
+                    Agendar
+                </li>
+
+                <div class="line"></div>
+
+                <ul class="flex gap-3">
+                    <li
+                        class="hover:text-primary transition nav-item cursor-pointer bg-neutral-300 p-3 rounded-lg"
+                    >
+                        <i class="fa-solid fa-phone h-3"></i>
+                    </li>
+
+                    <li
+                        class="hover:text-primary transition nav-item cursor-pointer bg-neutral-300 p-3 rounded-lg"
+                    >
+                        <a href="https://www.instagram.com/jarbas.martins7/"
+                            ><i class="fa-brands fa-instagram h-3"></i
+                        ></a>
+                    </li>
+                    <li
+                        class="hover:text-primary transition nav-item cursor-pointer bg-neutral-300 p-3 rounded-lg"
+                    >
+                        <a href="https://wa.me/5533984319242"
+                            ><i class="fa-brands fa-whatsapp h-3"></i
+                        ></a>
+                    </li>
+                </ul>
+                <button
+                    class="bg-red-800 hover:bg-red-950 rounded-md p-2 text-white absolute right-0 bottom-0 mb-4 mr-4"
+                    onclick="menuMobClose()"
+                >
+                    Fechar
+                </button>
+            </ul>
+        </div>
+
+        <!-- FIM MENU MOB -->
 
         <!-- FIM NAVE -->
         <!-- HOME -->
@@ -68,7 +131,7 @@
         >
             <div class="space-y-2" id="home-items">
                 <h1
-                    class="text-2xl font-extrabold uppercase md:text-7xl text-gray-200 overflow-y-hidden"
+                    class="text-3xl font-extrabold uppercase md:text-7xl text-primary overflow-y-hidden"
                     id="title-home"
                 >
                     Barber Shop
@@ -251,8 +314,9 @@
 
         <!-- FIM UNIDADES DESKTOP -->
 
+        <!-- INFO -->
         <div
-            class="main flex flex-col-reverse justify-center items-center md:flex-row-reverse w-full h-[70vh] p-8 mt-40 md:mt-28 gap-5"
+            class="main flex flex-col-reverse justify-center items-center md:flex-row-reverse w-full h-[70vh] p-8 mt-52 md:mt-28 gap-5"
         >
             <div class="main-l flex items-center justify-center">
                 <img
