@@ -6,13 +6,13 @@ ScrollReveal().reveal("#home-items", {
     origin: "top",
 });
 
-ScrollReveal().reveal(".main-r", {
-    distance: "80px",
+ScrollReveal().reveal(".main-l", {
+    distance: "100%",
     duration: 2000,
     delay: 500,
-    opacity: 0,
+    opacity: 1,
     easing: "ease",
-    origin: "left",
+    origin: "right",
 });
 
 //
@@ -50,3 +50,13 @@ function menuMobClose(event) {
 
     menuMobile.style.display = "none";
 }
+
+let elementCarrossel = document.querySelector(".carrossel");
+let elementContainer = document.querySelector(".carrossel-container");
+let elementFilhos = Array.from(elementContainer.children);
+
+elementFilhos.forEach((item) => {
+    let elementDuplicado = item.cloneNode(true);
+
+    elementContainer.appendChild(elementDuplicado);
+});

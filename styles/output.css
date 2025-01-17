@@ -586,32 +586,20 @@ video {
   z-index: 40;
 }
 
-.mb-3 {
-  margin-bottom: 0.75rem;
-}
-
-.mr-3 {
-  margin-right: 0.75rem;
-}
-
-.mt-40 {
-  margin-top: 10rem;
-}
-
-.mt-72 {
-  margin-top: 18rem;
-}
-
-.mt-52 {
-  margin-top: 13rem;
-}
-
 .mb-4 {
   margin-bottom: 1rem;
 }
 
 .mr-4 {
   margin-right: 1rem;
+}
+
+.mt-52 {
+  margin-top: 13rem;
+}
+
+.mt-72 {
+  margin-top: 18rem;
 }
 
 .block {
@@ -764,9 +752,9 @@ video {
   background-color: rgb(0 23 34 / var(--tw-bg-opacity, 1));
 }
 
-.bg-neutral-500 {
+.bg-neutral-300 {
   --tw-bg-opacity: 1;
-  background-color: rgb(115 115 115 / var(--tw-bg-opacity, 1));
+  background-color: rgb(212 212 212 / var(--tw-bg-opacity, 1));
 }
 
 .bg-red-800 {
@@ -774,24 +762,9 @@ video {
   background-color: rgb(153 27 27 / var(--tw-bg-opacity, 1));
 }
 
-.bg-slate-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(226 232 240 / var(--tw-bg-opacity, 1));
-}
-
 .bg-slate-100 {
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity, 1));
-}
-
-.bg-neutral-200 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity, 1));
-}
-
-.bg-neutral-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(212 212 212 / var(--tw-bg-opacity, 1));
 }
 
 .object-cover {
@@ -950,6 +923,7 @@ body {
   width: 100%;
   max-width: 100%;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 .home {
@@ -1013,12 +987,11 @@ body {
   background-color: #0d1f2280;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
 }
 
 #img-card2:hover::after {
@@ -1032,12 +1005,11 @@ body {
   background-color: #0d1f2280;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
 }
 
 #img-card3:hover::after {
@@ -1051,12 +1023,11 @@ body {
   background-color: #0d1f2280;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
 }
 
 #img-card4:hover::after {
@@ -1070,12 +1041,11 @@ body {
   background-color: #0d1f2280;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
 }
 
 #img-card5:hover::after {
@@ -1089,12 +1059,11 @@ body {
   background-color: #0d1f2280;
   height: 100%;
   width: 100%;
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
   text-align: center;
   text-transform: uppercase;
   font-style: italic;
-  font-weight: bold;
 }
 
 #title-card,
@@ -1160,6 +1129,37 @@ body {
   width: 100%;
   height: 0.02cm;
   background-color: #000;
+}
+
+.carrossel {
+  max-width: 100%;
+  height: 50px;
+  background-color: #000;
+  margin-inline: auto;
+  overflow-x: hidden;
+  font-family: "Bebas Neue", serif;
+  display: flex;
+  justify-content: center;
+}
+
+.carrossel-container {
+  display: flex;
+  color: #fff;
+  width: -moz-max-content;
+  width: max-content;
+  gap: 50px;
+  animation: moving 50s linear infinite;
+  align-items: center;
+}
+
+.carrossel-item {
+  white-space: nowrap;
+}
+
+@keyframes moving {
+  to {
+    translate: calc(-30% + 10px);
+  }
 }
 
 .hover\:bg-red-950:hover {
