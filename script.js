@@ -12,7 +12,7 @@ ScrollReveal().reveal(".main-l", {
     delay: 500,
     opacity: 1,
     easing: "ease",
-    origin: "right",
+    origin: "left",
 });
 
 //
