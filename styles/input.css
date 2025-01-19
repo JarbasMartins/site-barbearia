@@ -220,9 +220,12 @@ body {
     background-color: #000;
     margin-inline: auto;
     overflow-x: hidden;
-    font-family: "Bebas Neue", serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
     display: flex;
     justify-content: center;
+    font-style: italic;
 }
 
 .carrossel-container {
@@ -244,6 +247,12 @@ body {
     }
 }
 
-.cards {
+.wrapper {
     font-family: "Bebas Neue", serif;
+}
+
+.wrapper-child {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
 }
