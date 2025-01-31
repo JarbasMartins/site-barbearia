@@ -11,6 +11,10 @@
             rel="stylesheet"
         />
         <link
+            href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link
             rel="stylesheet"
             href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
             integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
@@ -148,12 +152,12 @@
                 >
                     Barber Shop
                 </h1>
-                <div class="text-2xl md:text-3xl uppercase font-sans font-bold">
+                <div class="text-2xl md:text-3xl uppercase">
                     Seu sucesso começa com um bom corte
                 </div>
                 <div class="md:text-lg">
                     O primeiro passo para expressar sua personalidade, aumentar
-                    a autoestima e conquistar novas oportunidades
+                    a autoestima e conquistar novas oportunidades.
                 </div>
             </div>
         </div>
@@ -161,17 +165,17 @@
 
         <!-- UNIDADES MOB -->
         <div
-            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-5 bg-main flex md:hidden space-y-5"
+            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-5 bg-black flex md:hidden space-y-10"
         >
-            <div>
+            <div class="space-y-5">
                 <h1
-                    class="text-5xl text-gray-200 uppercase font-bold md:text-7xl text-center"
+                    class="text-5xl text-white font-normal md:text-7xl text-center"
                     id="title-card"
                 >
                     Nossas <br />Unidades
                 </h1>
                 <p
-                    class="text-lg text-gray-300 font-light md:text-3xl text-center"
+                    class="text-lg text-white md:text-3xl text-center"
                     id="description-card"
                 >
                     Ipanema | MG
@@ -252,16 +256,16 @@
 
         <!-- UNIDADES DESKTOP -->
         <div
-            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-10 bg-main hidden md:flex space-y-5"
+            class="items-center flex-col justify-center w-[100vw] h-[70vh] md:h-[100vh] py-10 bg-black hidden md:flex space-y-5"
         >
             <h1
-                class="text-2xl text-gray-200 uppercase font-bold md:text-7xl text-center"
+                class="text-2xl text-white md:text-7xl text-center font-normal"
                 id="title-card"
             >
                 Nossas <br />Unidades
             </h1>
             <p
-                class="text-gray-300 font-light text-2xl text-center"
+                class="text-white text-2xl text-center font-light"
                 id="description-card"
             >
                 Ipanema | MG
@@ -383,7 +387,7 @@
                 />
             </div>
             <div class="main-r space-y-5">
-                <h1 class="font-semibold text-4xl md:text-5xl">Sobre Nós</h1>
+                <h1 class="font-normal text-4xl md:text-5xl">Sobre Nós</h1>
                 <p class="md:text-xl text-secundary font-medium">
                     A BarberShop, inaugurada em 2022, é um espaço moderno e
                     aconchegante que oferece serviços personalizados para homens
@@ -405,7 +409,7 @@
         <div
             class="flex items-center justify-center flex-col h-full w-full mt-32 space-y-10 p-10 wrapper"
         >
-            <h1 class="text-5xl font-semibold md:text-7xl">NOSSOS SERVIÇOS</h1>
+            <h1 class="text-4xl font-normal md:text-7xl">NOSSOS SERVIÇOS</h1>
             <div
                 class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 md:gap-y-20 wrapper-child"
             >
@@ -420,7 +424,11 @@
                         />
                     </div>
                     <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">Corte</h1>
+                        <h1
+                            class="text-xl md:text-2xl font-semibold subtitle-wrapper"
+                        >
+                            Cortes
+                        </h1>
                         <p class="max-w-48">
                             O corte de cabelo pode transformar o visual,
                             trazendo estilo, personalidade e praticidade.
@@ -439,7 +447,11 @@
                         />
                     </div>
                     <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">Barba</h1>
+                        <h1
+                            class="text-xl md:text-2xl font-semibold subtitle-wrapper"
+                        >
+                            Barba
+                        </h1>
                         <p class="max-w-48">
                             A barba bem aparada realça o rosto, trazendo um
                             toque de masculinidade e elegância.
@@ -447,27 +459,7 @@
                         <p class="font-semibold text-lg">R$20.00</p>
                     </div>
                 </div>
-                <!-- <div
-                    class="h-full w-full flex items-center justify-center gap-5"
-                >
-                    <div>
-                        <img
-                            src="https://i0.wp.com/tudoz.com.br/wp-content/uploads/2023/09/Penteados-escovados-para-tras-esmaecidos-para-homens-de-cabelo-curto-cortes-cabelo-curto-masculino.webp?resize=683%2C1024&ssl=1"
-                            alt=""
-                            class="w-40 h-40 md:w-60 md:h-60 object-cover rounded-xl shadow-[0_18px_30px_-15px_rgba(0,0,0,0.8)]"
-                        />
-                    </div>
-                    <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">
-                            Skin Care
-                        </h1>
-                        <p class="max-w-40">
-                            Lorem ipsum dolor sit amet consectetur adipisicing
-                            elit. Quibusdam, quae.
-                        </p>
-                        <p class="font-semibold text-lg">R$20.00</p>
-                    </div>
-                </div> -->
+
                 <div
                     class="h-full w-full flex items-center justify-center gap-5"
                 >
@@ -479,7 +471,11 @@
                         />
                     </div>
                     <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">Luzes</h1>
+                        <h1
+                            class="text-xl md:text-2xl font-semibold subtitle-wrapper"
+                        >
+                            Luzes
+                        </h1>
                         <p class="max-w-48">
                             As luzes adicionam profundidade e luminosidade aos
                             cabelos, criando um visual iluminado e natural.
@@ -498,7 +494,9 @@
                         />
                     </div>
                     <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">
+                        <h1
+                            class="text-xl md:text-2xl font-semibold subtitle-wrapper"
+                        >
                             Platinado
                         </h1>
                         <p class="max-w-48">
@@ -519,7 +517,9 @@
                         />
                     </div>
                     <div class="md:space-y-3">
-                        <h1 class="text-xl md:text-2xl font-semibold">
+                        <h1
+                            class="text-xl md:text-2xl font-semibold subtitle-wrapper"
+                        >
                             Pigmentação
                         </h1>
                         <p class="max-w-48">
@@ -534,25 +534,25 @@
 
         <!-- FIM CARDS -->
 
-        <div class="text-center bg-main pb-2">
+        <div class="text-center bg-black text-white pb-2">
             <a
                 href="#"
                 class="flex items-center justify-center mb-5 text-2xl font-semibold text-white"
             >
                 <img
                     src="assets/LOGOHEADER.png"
-                    class="h-14 w-14 mr-3"
+                    class="h-16 w-16 mr-3"
                     alt=""
                 />
             </a>
 
-            <span class="block text-sm text-center text-gray-500"
+            <span class="block text-sm text-center"
                 >© 2025 BarberShop™. Todos os Direitos Reservados.
             </span>
 
             <ul class="flex justify-center mt-5 space-x-5">
                 <li>
-                    <a href="#" class="text-gray-500 hover:text-white">
+                    <a href="#">
                         <svg
                             class="w-5 h-5"
                             fill="currentColor"
@@ -569,7 +569,7 @@
                 </li>
 
                 <li>
-                    <a href="#" class="text-gray-500 hover:text-white">
+                    <a href="#">
                         <svg
                             class="w-5 h-5"
                             fill="currentColor"

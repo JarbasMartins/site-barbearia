@@ -630,8 +630,8 @@ video {
   display: none;
 }
 
-.h-14 {
-  height: 3.5rem;
+.h-16 {
+  height: 4rem;
 }
 
 .h-24 {
@@ -640,10 +640,6 @@ video {
 
 .h-3 {
   height: 0.75rem;
-}
-
-.h-40 {
-  height: 10rem;
 }
 
 .h-5 {
@@ -678,8 +674,8 @@ video {
   height: 100%;
 }
 
-.w-14 {
-  width: 3.5rem;
+.w-16 {
+  width: 4rem;
 }
 
 .w-2\/3 {
@@ -688,10 +684,6 @@ video {
 
 .w-24 {
   width: 6rem;
-}
-
-.w-40 {
-  width: 10rem;
 }
 
 .w-5 {
@@ -712,10 +704,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.max-w-40 {
-  max-width: 10rem;
 }
 
 .max-w-48 {
@@ -840,11 +828,6 @@ video {
   background-color: rgb(31 41 55 / var(--tw-bg-opacity, 1));
 }
 
-.bg-main {
-  --tw-bg-opacity: 1;
-  background-color: rgb(0 23 34 / var(--tw-bg-opacity, 1));
-}
-
 .bg-neutral-300 {
   --tw-bg-opacity: 1;
   background-color: rgb(212 212 212 / var(--tw-bg-opacity, 1));
@@ -921,6 +904,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-5xl {
   font-size: 3rem;
   line-height: 1;
@@ -946,11 +934,6 @@ video {
   line-height: 1.75rem;
 }
 
-.text-4xl {
-  font-size: 2.25rem;
-  line-height: 2.5rem;
-}
-
 .font-bold {
   font-weight: 700;
 }
@@ -961,6 +944,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .font-semibold {
@@ -983,16 +970,6 @@ video {
 .text-gray-200 {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-300 {
-  --tw-text-opacity: 1;
-  color: rgb(209 213 219 / var(--tw-text-opacity, 1));
-}
-
-.text-gray-500 {
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity, 1));
 }
 
 .text-secundary {
@@ -1083,11 +1060,25 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: start;
-  font-family: "Bebas Neue", serif;
+}
+
+.main-r p::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 10px;
+  background-color: #363434;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.main-r h1 {
+  font-family: "Playfair Display SC", serif;
 }
 
 .main-r p {
-  max-width: 60ch;
+  max-width: 50ch;
+  font-family: Helvetica, sans-serif;
 }
 
 .img-card {
@@ -1184,9 +1175,12 @@ body {
   font-style: italic;
 }
 
-#title-card,
+#title-card {
+  font-family: "Playfair Display SC", serif;
+}
+
 #description-card {
-  font-family: "Bebas Neue", serif;
+  font-family: "Playfair Display SC", serif;
 }
 
 .slider-container {
@@ -1246,7 +1240,7 @@ body {
 .carrossel {
   max-width: 100%;
   height: 50px;
-  background-color: #000;
+  background-color: #363434;
   margin-inline: auto;
   overflow-x: hidden;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
@@ -1277,14 +1271,13 @@ body {
   }
 }
 
-.wrapper {
-  font-family: "Bebas Neue", serif;
+.wrapper,
+.subtitle-wrapper {
+  font-family: "Playfair Display SC", serif;
 }
 
 .wrapper-child {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
-        sans-serif;
+  font-family: Helvetica;
 }
 
 .hover\:bg-red-950:hover {
@@ -1295,11 +1288,6 @@ body {
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
   color: rgb(207 220 48 / var(--tw-text-opacity, 1));
-}
-
-.hover\:text-white:hover {
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
 @media (min-width: 768px) {
