@@ -13,7 +13,6 @@ ScrollReveal().reveal(".main-l", {
     opacity: 1,
     easing: "ease",
     origin: "left",
-    reset: true,
 });
 
 //
