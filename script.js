@@ -42,13 +42,16 @@ function updateSliderPosition() {
 function menuMobShow() {
     const menuMobile = document.getElementById("menu-mobile");
 
-    menuMobile.style.display = "block";
+    menuMobile.style.display = "initial";
+    menuMobile.classList.remove("transitionOff");
+    menuMobile.classList.add("transition");
 }
 
 function menuMobClose(event) {
     const menuMobile = document.getElementById("menu-mobile");
 
-    menuMobile.style.display = "none";
+    menuMobile.classList.remove("transition");
+    menuMobile.classList.add("transitionOff");
 }
 
 let elementCarrossel = document.querySelector(".carrossel");
@@ -60,3 +63,24 @@ elementFilhos.forEach((item) => {
 
     elementContainer.appendChild(elementDuplicado);
 });
+
+// function scrollToSection() {
+//     const linkInterno = document.querySelectorAll(
+//         '.js-menu li a[href^="#info"]'
+//     );
+
+//     function scrollSection(e) {
+//         e.preventDefault();
+//         const href = e.currentTarget.getAttribute("href");
+//         const section = document.querySelectorAll(href);
+//         section.scrollIntoView({
+//             behavior: "smooth",
+//             block: "start",
+//         });
+//     }
+
+//     linkInterno.forEach((link) => {
+//         link.addEventListener("click", scrollSection);
+//     });
+// }
+// scrollToSection();

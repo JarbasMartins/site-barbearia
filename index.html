@@ -43,7 +43,7 @@
     <body>
         <!-- NAV -->
         <header
-            class="flex items-center justify-around top-0 right-0 z-10 absolute w-full md:px-5 text-white"
+            class="flex items-center justify-around top-0 right-0 z-10 absolute w-full md:px-5 text-white js-menu"
             id="header"
         >
             <h1 class="">
@@ -57,20 +57,14 @@
             <nav class="hidden md:flex bg-gray-800 p-5 rounded-full">
                 <ul class="flex gap-7">
                     <li class="cursor-pointer hover:text-primary transition">
-                        <i class="fa-brands fa-instagram"></i>
-                    </li>
-                    <li class="cursor-pointer hover:text-primary transition">
-                        <i class="fa-brands fa-whatsapp"></i>
-                    </li>
-                    <li class="cursor-pointer hover:text-primary transition">
-                        <i class="fa-solid fa-phone"></i>
+                        Contatos
                     </li>
                     <li class="cursor-pointer hover:text-primary transition">
                         Agendar
                     </li>
 
                     <li class="cursor-pointer hover:text-primary transition">
-                        Sobre Nós
+                        <a href="#info">Sobre Nós</a>
                     </li>
                 </ul>
             </nav>
@@ -86,7 +80,7 @@
 
         <div
             id="menu-mobile"
-            class="fixed right-0 top-0 bg-slate-100 z-40 h-[30vh] hidden md:hidden text-black"
+            class="fixed right-0 top-0 bg-slate-100 z-40 h-full hidden md:hidden text-black"
         >
             <ul
                 class="flex gap-3 flex-col p-4 items-end justify-start md:hidden"
@@ -129,7 +123,7 @@
                     </li>
                 </ul>
                 <button
-                    class="bg-red-800 hover:bg-red-950 rounded-md p-2 text-white absolute right-0 bottom-0 mb-4 mr-4"
+                    class="bg-red-800 hover:bg-red-950 rounded-md p-2 text-white mt-5"
                     onclick="menuMobClose()"
                 >
                     Fechar
@@ -377,7 +371,7 @@
 
         <!-- INFO -->
         <div
-            class="main flex flex-col-reverse justify-center items-center md:flex-row w-full h-full p-8 gap-5"
+            class="main flex flex-col-reverse justify-center items-center md:flex-row w-full h-full p-8 gap-5 scroll-section"
         >
             <div class="main-l flex items-center justify-center">
                 <img

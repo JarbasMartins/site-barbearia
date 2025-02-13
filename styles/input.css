@@ -229,10 +229,6 @@ body {
     }
 }
 
-#menu-mobile {
-    border-radius: 0px 0px 0px 16px;
-}
-
 .carrossel {
     max-width: 100%;
     height: 50px;
@@ -273,4 +269,30 @@ body {
 
 .wrapper-child {
     font-family: Helvetica;
+}
+
+.transition {
+    animation: menumob 1s forwards;
+}
+
+@keyframes menumob {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.transitionOff {
+    animation: menumobOff 1s forwards;
+}
+
+@keyframes menumobOff {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(100%);
+    }
 }
