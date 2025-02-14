@@ -12,6 +12,7 @@
     outline: none;
     scroll-behavior: smooth;
     scrollbar-width: none;
+    user-select: none;
 }
 
 body {
