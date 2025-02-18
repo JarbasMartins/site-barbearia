@@ -1,5 +1,3 @@
-document.documentElement.requestFullscreen();
-
 ScrollReveal().reveal("#home-items", {
     distance: "10%",
     duration: 2000,
